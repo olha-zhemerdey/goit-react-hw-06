@@ -1,0 +1,70 @@
+/* ContactForm.module.css */
+
+/* Загальний стиль для форми */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #001a00;
+  border: 1px solid green;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  color: green;
+}
+
+/* Стиль для контейнера полів */
+.wrpap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Стиль для помилок */
+.error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: -18px;
+  left: 0;
+}
+
+/* Стиль для інпутів */
+.input {
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: black;
+  color: green;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #00ff00;
+  opacity: 0.8;
+}
+
+/* Стиль для лейблів */
+.label {
+  font-size: 14px;
+  color: green;
+  margin-top: 5px;
+}
+
+/* Стиль для кнопки */
+button {
+  background-color: green;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d00;
+}

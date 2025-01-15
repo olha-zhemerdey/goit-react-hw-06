@@ -1,0 +1,36 @@
+/* ContactList.module.css */
+
+/* Загальний стиль для списку контактів */
+.list {
+  list-style-type: none;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 600px;
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: #001a00;
+}
+
+/* Стиль для кожного елемента списку */
+.list > li {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: black;
+  color: green;
+}
+
+/* Стиль для відображення контактів */
+.list > li:hover {
+  background-color: #004d00;
+  color: #00ff00;
+}
+
+/* Загальний стиль для порожнього списку */
+.empty {
+  text-align: center;
+  color: green;
+  font-style: italic;
+  padding: 20px;
+}
