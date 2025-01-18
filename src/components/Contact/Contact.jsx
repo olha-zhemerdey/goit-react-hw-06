@@ -1,28 +1,25 @@
-import { FaUserCircle } from "react-icons/fa";
-import { MdOutlinePhoneInTalk } from "react-icons/md";
+import { IoIosContact } from "react-icons/io";
+import { MdPhoneInTalk } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contactsSlice";
 import css from "./Contact.module.css";
 
 export default function Contact({ data: { name, number, id } }) {
   const dispatch = useDispatch();
-  const handleClick = () => dispatch(deleteContact(id));
 
   return (
     <li className={css.item}>
       <ul>
         <li className={css.itemContact}>
-          <FaUserCircle />
+          <IoIosContact />
           <p>{name}</p>
         </li>
         <li className={css.itemContact}>
-          <MdOutlinePhoneInTalk />
+          <MdPhoneInTalk />
           <p>{number}</p>
         </li>
       </ul>
-      <button type="button" onClick={handleClick}>
-        Delete
-      </button>
+      <button onClick={() => dispatch(deleteContact(id))}>Delete Delete</button>
     </li>
   );
 }

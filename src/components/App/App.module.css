@@ -1,6 +1,3 @@
-/* App.css */
-
-/* Загальний стиль для фону */
 body {
   background-color: black;
   color: green;
@@ -9,14 +6,21 @@ body {
   padding-top: 20px;
 }
 
-/* Контейнер для додаткової організації */
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 400px;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Стиль для кнопок */
 button {
   background-color: green;
   color: black;
@@ -32,7 +36,6 @@ button:hover {
   background-color: #004d00;
 }
 
-/* Стиль для списку контактів */
 ul {
   list-style-type: none;
   padding: 0;

@@ -1,16 +1,17 @@
 import ContactForm from "../ContactForm/ContactForm";
 import ContactList from "../ContactList/ContactList";
 import SearchBox from "../SearchBox/SearchBox";
-import "./App.css";
+import css from "./App.module.css";
 
-function App() {
+const App = () => {
   return (
     <>
+      <p className={css.title}>Phone Book</p>
       <ContactForm />
       <SearchBox />
       <ContactList />
     </>
   );
-}
+};
 
 export default App;
